@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Japanese Short Answer Quiz</h1>
+      <h1>Jorvan's despair of a quiz</h1>
 
       {questions.length === 0 ? (
         <QuizSettings onStartQuiz={handleStartQuiz} />

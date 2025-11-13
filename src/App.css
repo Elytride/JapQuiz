@@ -50,6 +50,7 @@ h1 {
   font-size: 1.5em;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #000; /* Ensure question text is black */
 }
 
 form {
@@ -134,4 +135,41 @@ button:disabled {
 
 .quiz-results button {
   margin-top: 15px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .quiz-settings, .quiz-container {
+    padding: 15px;
+  }
+
+  .file-selection {
+    padding: 0 10px;
+  }
+
+  .question-text {
+    font-size: 1.2em;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"] {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
 }
